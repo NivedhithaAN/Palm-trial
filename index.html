@@ -7,12 +7,30 @@
 		<title>Palm secure</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
+    
+      <html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="/PALMSECURE LOGO2.png" alt="Logo">
+    </div>
+    <ul class="menu">
+      <li><a href="/invalid.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
     <!-- container div -->
     <div class="container">
 
+    <!-- container div -->
         <!-- upper button section to select
             the login or signup form -->
         <div class="slider"></div>
@@ -20,23 +38,27 @@
             <button class="login">Login</button>
             <button class="signup">Signup</button>
         </div>
-
         <!-- Form section that contains the
             login and the signup form -->
         <div class="form-section">
-
+            
             <!-- login form -->
+            <form id="loginForm">
             <div class="login-box">
                 <input type="email"
                     class="email ele"
-                    placeholder="youremail@email.com">
+                    placeholder="youremail@email.com"
+                    name="username" required>
                 <input type="password"
                     class="password ele"
-                    placeholder="password">
-                <button type="button" id="logindata" name="logindata" class="clkbtn">Login</button>
+                    placeholder="password"
+                    name="password"
+                    required>
+                <button type="submit" id="logindata" name="logindata" class="clkbtn">Login</button>
             </div>
-
+            </form>
             <!-- signup form -->
+            
             <div class="signup-box">
                 <input type="text"
                     class="name ele"
@@ -55,10 +77,7 @@
                 <button type="button" id="submitData" name="submitData" class="clkbtn">Signup</button>
             </div>
         </div>
-    </div>
-
-
-
+<script src="hello.js"></script>
     
 
 	<script type="module">

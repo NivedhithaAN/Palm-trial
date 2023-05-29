@@ -16,21 +16,55 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 30px;
-    background-color: rgb(231, 231, 231);
+    background: linear-gradient(to bottom, rgb(187, 210, 197),
+    rgb(83, 105, 118));
+    overflow: hidden;
 }
 
-header {
-    width: 100%;
+
+
+
+
+nav {
+    background-color: white;
+    color: #fff;
+    box-shadow: 8px 8px 20px rgb(79, 116, 128);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
+    height: 70px;
+    width: 1100px;
+    padding: 0px 50px;
+  }
+  
+  .logo {
+    flex-grow: 1;
+  }
+  
+  .logo img {
+    height: 70px;
+    margin-right: 100px;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li a {
+    color: black;
+    text-decoration: none;
+  }
 
-.heading {
-    color: green;
-}
+  .menu li a:hover{
+    color: rgb(95, 133, 146);
+  }
+
 
 .title {
     font-weight: 400;
@@ -38,7 +72,7 @@ header {
 }
 
 .container {
-    height: 600px;
+    height: 550px;
     width: 500px;
     background-color: rgb(255, 255, 255);
     box-shadow: 8px 8px 20px rgb(79, 116, 128);
@@ -76,7 +110,7 @@ header {
             rgb(83, 105, 118));
     position: absolute;
     top: 20px;
-    left: 100px;
+    left: 90px;
     transition: all 0.5s ease-in-out;
 }
 
@@ -110,15 +144,15 @@ header {
 }
 
 .login-box {
-    gap: 50px;
+    gap: 40px;
 }
 
 .signup-box {
-    gap: 30px;
+    gap: 25px;
 }
 
 .ele {
-    height: 60px;
+    height: 50px;
     width: 400px;
     outline: none;
     border: none;
@@ -141,6 +175,9 @@ header {
     cursor: pointer;
 }
 
+.clkbtn:hover{
+    color: rgb(95, 133, 146);
+}
 /* For Responsiveness of the page */
 
 @media screen and (max-width: 650px) {
@@ -269,3 +306,47 @@ header {
 .form__link:hover {
     text-decoration: underline;
 }
+.picture img{
+    width: 250px;
+    height: auto;
+    background-color:#fff ;
+    border-radius: 100%;
+    align-items:center;
+}
+@keyframes jiggle {
+    0% {
+      transform: rotate(0deg);
+      border-color: transparent;
+    }
+    20% {
+      transform: rotate(-2deg);
+      border-color: rgb(187, 210, 197);
+    }
+    40% {
+      transform: rotate(2deg);
+      border-color: rgb(131, 184, 215);
+    }
+    60% {
+      transform: rotate(-2deg);
+      border-color: rgb(121, 148, 164);
+    }
+    80% {
+      transform: rotate(2deg);
+      border-color: rgb(83, 105, 118);
+    }
+    100% {
+      transform: rotate(0deg);
+      border-color: transparent;
+    }
+  }
+  
+  .picture {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .picture img {
+    display: block;
+    border: 2px solid transparent;
+    animation: jiggle 2s infinite;
+  }
